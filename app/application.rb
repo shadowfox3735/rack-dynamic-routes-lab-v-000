@@ -10,7 +10,7 @@ class Application
       item = @@items.find{|i| i.name == song_name}
       
       if item.nil?
-        
+        "Item not found"
         resp.status = 400
       else
         resp.write item.price
