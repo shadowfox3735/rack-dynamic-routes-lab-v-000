@@ -7,7 +7,7 @@ class Application
     
     if resp.path.match(/items/)
       item_name = req.path.split("/items/").last
-      
+      item = @@items.find{|i| i.title == song_title}
     else
       resp.write "Item not found"
       resp.status = 404
