@@ -7,7 +7,8 @@ class Application
     if resp.path=="/items"
       
     else
-      resp.status = "404"
+      resp.status = 404
+    end
   end
   
 end
